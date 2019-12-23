@@ -97,12 +97,38 @@ body {
   display: block;
   font-size: 25px;
 }
+
+#audio-player .section-container {
+ display:flex;
+ flex-direction: column;
+ padding: 3rem;
+ align-items: center;
+ justify-content: center;
+ margin: 0;
+ text-align: center;
+}
+#audio-player h2 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+#audio-player h3{
+  margin: .5rem;
+}
+
+.song-title {
+  font-style: italic;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+
 #photo-album {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 2rem;
+  margin-top: 0;
 }
 
 #photo-album  img {

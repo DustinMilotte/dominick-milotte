@@ -1,4 +1,5 @@
 const countdown = document.querySelector('.countdown');
+const musicPlayer = document.getElementById('music-player')
 
 // Set Launch Date (ms)
 const launchDate = new Date('Jan 11, 2020 00:00:00').getTime();
@@ -36,3 +37,6 @@ const intvl = setInterval(() => {
     countdown.innerHTML = 'Retired!';
   }
 }, 1000);
+
+//music controls
+// musicPlayer.play();
