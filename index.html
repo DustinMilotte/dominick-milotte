@@ -19,11 +19,11 @@
       src="https://kit.fontawesome.com/334dfe226e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/confetti.js"></script>
   </head>
   <body>
     <section>
-      <canvas id="my-canvas"></canvas>
+      <!-- <canvas id="confetti-canvas"></canvas> -->
+      <canvas id="confetti-canvas" style="display:block;z-index:999999;pointer-events:none;position:absolute;top:0" width="444" height="676"></canvas>
       <div class ="landing">
         <div class="landing-inner">
           <h1>Dominick Milotte</h1>
@@ -72,6 +72,7 @@
       <img src="./img/dustindadchinatown.jpg" alt="" />
       <img src="./img/momdadsunflowers.jpg" alt="" />
     </section>
+    <script src="js/confetti.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,14 +1,17 @@
+// startConfetti();
 const countdown = document.querySelector('.countdown');
 const musicPlayer = document.getElementById('music-player');
 const countdownMsg = document.getElementById('countdown-msg');
-
+confetti.start();
 // Set Launch Date (ms)
 const launchDate = new Date('Jan 11, 2020 00:00:00').getTime();
 
-const confettiElement = document.getElementById('my-canvas');
+const confettiElement = document.getElementById('confetti-canvas');
 var confettiSettings = { target: 'my-canvas' };
-var confetti = new ConfettiGenerator(confettiSettings);
-confetti.render();
+// var confetti = new ConfettiGenerator(confettiSettings);
+// confetti.render();
+
+
 
 // Update every second
 const intvl = setInterval(() => {
@@ -41,7 +44,7 @@ const intvl = setInterval(() => {
     // Style and output text
     countdown.innerHTML = 'Retired!!';
     countdownMsg.classList.add('pulse');
-    confettiElement.style.display = 'inline';
+    // confettiElement.style.display = 'inline';
   }
 }, 1000);
 
