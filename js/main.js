@@ -1,3 +1,5 @@
+import ConfettiGenerator from "confetti-js";
+
 const countdown = document.querySelector('.countdown');
 const musicPlayer = document.getElementById('music-player');
 const countdownMsg = document.getElementById('countdown-msg');
