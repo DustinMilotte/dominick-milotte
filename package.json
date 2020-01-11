@@ -1,0 +1,22 @@
+{
+  "name": "dads-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinMilotte/dominick-milotte.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinMilotte/dominick-milotte/issues"
+  },
+  "homepage": "https://github.com/DustinMilotte/dominick-milotte#readme",
+  "dependencies": {
+    "confetti-js": "0.0.16"
+  }
+}

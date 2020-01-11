@@ -11,6 +11,12 @@ body {
   /* overflow: hidden; */
 }
 
+#my-canvas {
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+
 .landing-inner {
   position: absolute;
   top: 0;
@@ -126,6 +132,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin: 2rem;
   margin-top: 0;
@@ -135,6 +142,37 @@ body {
   max-width: 50vw;
   margin: 1rem;
   border :1px solid white;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 4em;
+    text-shadow:  #416165 1px 1px,  #416165 2px 2px;
+  }
+  100% {
+    font-size: 4.5em;
+    text-shadow:  #416165 3px 3px,  #416165 4px 4px;
+  }
+}
+
+.pulse {
+  /* animation: pulse 2s ease-in-out 0 infinite alternate; */
+  /*animations*/
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  font-size: 2em;
+  color: #fff;
+  text-shadow: #416165 1px 1px, #416165 2px 2px;
+  text-align: center;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%); */
 }
 
 @media (max-width: 650px) {

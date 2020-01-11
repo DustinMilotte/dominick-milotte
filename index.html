@@ -19,29 +19,34 @@
       src="https://kit.fontawesome.com/334dfe226e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
   </head>
   <body>
-    <section class="landing">
-      <div class="landing-inner">
-        <h1>Dominick Milotte</h1>
-        <div class="landing-titles">
-          <span>Father <i class="fas fa-baseball-ball fa-sm"></i></span>
-          <span>Husband <i class="fas fa-baseball-ball fa-sm"></i></span>
-          <span>Grocery Guru <i class="fas fa-baseball-ball fa-sm"></i></span>
-          <span>Baseball Aficionado</span>
+    <section>
+      <canvas id="my-canvas"></canvas>
+      <div class ="landing">
+        <div class="landing-inner">
+          <h1>Dominick Milotte</h1>
+          <div class="landing-titles">
+            <span>Father <i class="fas fa-baseball-ball fa-sm"></i></span>
+            <span>Husband <i class="fas fa-baseball-ball fa-sm"></i></span>
+            <span>Grocery Guru <i class="fas fa-baseball-ball fa-sm"></i></span>
+            <span>Baseball Aficionado</span>
+          </div>
+          <div class="landing-titles-small">
+            <span>Father<i class="fas fa-baseball-ball fa-sm"></i>Husband</span>
+            <span
+              >Grocery Guru<i class="fas fa-baseball-ball fa-sm"></i>Baseball
+              Aficionado</span
+            >
+          </div>
+  
+          <h3>Countdown To Retirement</h3>
+          <div id="countdown-msg" class="countdown "></div>
         </div>
-        <div class="landing-titles-small">
-          <span>Father<i class="fas fa-baseball-ball fa-sm"></i>Husband</span>
-          <span
-            >Grocery Guru<i class="fas fa-baseball-ball fa-sm"></i>Baseball
-            Aficionado</span
-          >
-        </div>
-
-        <h3>Countdown To Retirement</h3>
-        <div class="countdown"></div>
       </div>
     </section>
+
     <section id="audio-player">
       <div class="section-container">
         <div id="audio-info-container">

@@ -1,8 +1,14 @@
 const countdown = document.querySelector('.countdown');
-const musicPlayer = document.getElementById('music-player')
+const musicPlayer = document.getElementById('music-player');
+const countdownMsg = document.getElementById('countdown-msg');
 
 // Set Launch Date (ms)
 const launchDate = new Date('Jan 11, 2020 00:00:00').getTime();
+
+const confettiElement = document.getElementById('my-canvas');
+var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
 
 // Update every second
 const intvl = setInterval(() => {
@@ -33,10 +39,10 @@ const intvl = setInterval(() => {
     // Stop countdown
     clearInterval(intvl);
     // Style and output text
-    countdown.style.color = '#17a2b8';
-    countdown.innerHTML = 'Retired!';
+    countdown.innerHTML = 'Retired!!';
+    countdownMsg.classList.add('pulse');
+    confettiElement.style.display = 'inline';
   }
 }, 1000);
 
-//music controls
-// musicPlayer.play();
+
